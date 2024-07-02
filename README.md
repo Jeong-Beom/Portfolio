@@ -47,3 +47,5 @@ pyenv install 3.12.4
 # Create virtual env
 pyenv virtualenv 3.12.4 venv_portfolio
 ```
+
+8. requirements.txt 내용으로 필요 패키지 설치
