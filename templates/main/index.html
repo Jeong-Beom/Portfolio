@@ -11,7 +11,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="{% static 'img/hero-bg.jpg' %}" alt="" data-aos="fade-in" class="">
+      <img src="{% static 'img/img_source/main_bg.png' %}" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>안녕하세요.</h2>
@@ -38,7 +38,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="{% static 'img/my-profile-img.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/img_source/profile.png' %}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
             <h2>Data Engineer &amp; BI Developer.</h2>
@@ -49,7 +49,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>생년월일:</strong> <span>-</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>블로그:</strong> <span>https://data-is-power.tistory.com/</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>블로그:</strong> <a href="https://data-is-power.tistory.com/" target="_blank">https://data-is-power.tistory.com/</a></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>전화번호:</strong> <span>-</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>거주도시:</strong> <span>대한민국 서울</span></li>
                 </ul>
@@ -347,12 +347,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pp">
               <div class="portfolio-content h-100">
-                <img src="{% static 'img/portfolio/app-1.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'img/img_source/notice_board_pratice_01.png' %}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Personal Project 1</h4>
                   <p>Django로 만든 간단한 게시판 서비스입니다.</p>
                   <a href="{% static 'img/img_source/notice_board_pratice_01.png' %}" title="Django로 만든 간단한 게시판 서비스입니다." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="{% url 'main:portfolio_details' %}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="{% url 'main:portfolio_details_pp1' %}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -405,7 +405,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
             <div>
-              <h4 class="title"><a href="{% url 'main:service_details' %}" class="stretched-link">Sample</a></h4>
+              <h4 class="title"><a href="{% url 'main:service_details_sample' %}" class="stretched-link">Sample</a></h4>
               <p class="description">세부내용 작성 목적 샘플 페이지입니다.</p>
             </div>
           </div>
@@ -415,7 +415,7 @@
             <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
             <div>
               <h4 class="title"><a class="stretched-link"></a>LT메탈</h4>
-              <p class="description">작업중입니다.</p>
+              <p class="description">향후 추가예정입니다.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -423,7 +423,7 @@
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
             <div>
               <h4 class="title"><a class="stretched-link">OB맥주</a></h4>
-              <p class="description">작업중입니다.</p>
+              <p class="description">향후 추가예정입니다.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -431,7 +431,7 @@
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
             <div>
               <h4 class="title"><a class="stretched-link">삼성전자</a></h4>
-              <p class="description">작업중입니다.</p>
+              <p class="description">향후 추가예정입니다.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -439,7 +439,7 @@
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
             <div>
               <h4 class="title"><a class="stretched-link">골프존</a></h4>
-              <p class="description">작업중입니다.</p>
+              <p class="description">향후 추가예정입니다.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -562,7 +562,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>궁금하신게 있으면 아래의 정보를 참고하여 연락주시기 바랍니다.(해당 기능은 현재 작동하지 않습니다.)</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -576,23 +576,23 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>이력서를 참고해주세요.</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <h3>Call</h3>
+                  <p>이력서를 참고해주세요.</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <h3>Email</h3>
+                  <p>이력서를 참고해주세요.</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -603,7 +603,6 @@
           <div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">

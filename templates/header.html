@@ -3,7 +3,7 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="{% static 'img/my-profile-img.jpg' %}" alt="" class="img-fluid rounded-circle">
+      <img src="{% static 'img/img_source/profile.png' %}" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="{% url 'main:index' %}" class="logo d-flex align-items-center justify-content-center">
@@ -13,11 +13,10 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="https://x.com/" class="twitter" target='_blank'><i class="bi bi-twitter-x"></i></a>
-      <a href="https://www.facebook.com/" class="facebook" target='_blank'><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/" class="instagram" target='_blank'><i class="bi bi-instagram"></i></a>
-      <a href="https://www.google.com/" class="google-plus" target='_blank'><i class="bi bi-skype"></i></a>
-      <a href="https://www.linkedin.com/" class="linkedin" target='_blank'><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Jeong-Beom" class="github" target='_blank'><i class="bi bi-github"></i></a>
+      <a href="https://data-is-power.tistory.com//" class="Tistory" target='_blank'><i class="bi bi-clipboard-data-fill"></i></a>
+      <a href="https://www.linkedin.com/in/%EC%A0%95%EB%B2%94-%EC%A1%B0-91677a13b/" class="linkedin" target='_blank'><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/7466_mouse/" class="instagram" target='_blank'><i class="bi bi-instagram"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -29,13 +28,20 @@
         <li><a href="{% url 'main:index' %}#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <li class="dropdown"><a><i class="bi bi-menu-button navicon"></i> <span>Details</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a>Portfolio</a></li>
+            <li class="dropdown"><a><span>Personal Project</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="{% url 'main:portfolio_details_pp1' %}">Personal Project 1</a></li>
               </ul>
             </li>
+            
+            <li><a>Services</a></li>
+            <li class="dropdown"><a><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="{% url 'main:service_details_sample' %}">Sample</a></li>
+              </ul>
+            </li>
+
           </ul>
         </li>
         <li><a href="{% url 'main:index' %}#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
