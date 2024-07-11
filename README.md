@@ -87,9 +87,11 @@ git clone https://github.com/Jeong-Beom/Portfolio.git
 9. 가상환경 진입 후 requirements.txt 내용으로 필요 패키지 설치
 ```bash
 # 개발서버에서 진입시 사용
+cd Portfolio
 . enter_local.sh
 
 # 운영서버에서 진입시 사용
+cd Portfolio
 . enter_prod.sh
 ```
 ```python
