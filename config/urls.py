@@ -22,5 +22,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('main/', include('main.urls')),
     path('', base_views.index, name='index'),
-    path('/', base_views.index, name='index_slash'),
 ]
