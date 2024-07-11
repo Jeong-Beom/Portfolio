@@ -79,7 +79,12 @@ pyenv install 3.12.4
 pyenv virtualenv 3.12.4 venv_portfolio
 ```
 
-8. 가상환경 진입 후 requirements.txt 내용으로 필요 패키지 설치
+8. git clone
+```bash
+git clone https://github.com/Jeong-Beom/Portfolio.git
+```
+
+9. 가상환경 진입 후 requirements.txt 내용으로 필요 패키지 설치
 ```bash
 # 개발서버에서 진입시 사용
 . enter_local.sh
@@ -91,11 +96,6 @@ pyenv virtualenv 3.12.4 venv_portfolio
 pip install wheel # 해당 패키지는 운영 서버에서만 설치
 
 pip install -r requirements.txt
-```
-
-9. git clone
-```bash
-git clone https://github.com/Jeong-Beom/Portfolio.git
 ```
 
 10. Create .env file(+ migrate)
