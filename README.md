@@ -25,7 +25,7 @@
 ### 코드 변경시 적용 기본 사항
 1. git push
 2. git pull
-3. sudo systemctl restart mysite01.service
+3. sudo systemctl restart portfolio.service
 4. sudo systemctl restart nginx
 
 ----------------------------------------------------------------------------
