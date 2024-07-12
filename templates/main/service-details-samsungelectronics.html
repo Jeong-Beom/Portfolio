@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body class="service-details-page">
+
+  <!-- Header -->
+  {% include "header.html" %}
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'main:index' %}">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <img src="{% static 'img/img_source/Samsung.png' %}" class="img-fluid">
+            </div>
+
+            <h4>삼성전자</h4>
+            <p>삼성전자는 대한민국의 반도체, 전자제품, 디스플레이와 통신장비, 전자 부품들을 설계, 제조하는 종합 반도체 기업으로 한국의 수원에 본사를 두고 있습니다.<br> 
+               휴대폰과 노트북 등의 소비자 전자제품, 에어컨과 냉장고의 가전제품, 디스플레이와 통신 장비, 컴퓨터, 사무용 제품의 제조, 메모리 반도체, 그리고 제조인 파운드리 사업을 중심으로 한 종합 반도체와 디스플레이, 전자 부품 제조 사업을 하고 있습니다.
+            </p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <h3>삼성전자 무선사업부 CRM Analytics 운영관리 & <br>삼성전자 전사 CRM BI 보고서 시스템 구축 프로젝트</h3>
+            <h4>
+              프로젝트 기간(운영): 2022.06 - 2023.06
+            </h4>
+            <p>
+              <br>Azure Synapse 및 SQL Server, SSMS, SSIS, Powershell, PowerBI를 활용한 무선사업부 시각화 Report 시스템을 운영관리하는 프로젝트였습니다.
+              이후 진행된 프로젝트는 해당 시스템의 고도화를 목적으로 Azure Synapse 및 SQL Server, SSMS, SSIS, PowerBI를 활용한 MX, VD, DA 사업부 성과 BI 서비스를 구축하는 프로젝트였습니다.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>DataMart내 테이블 생성, 수정, 삭제, 가공 및 PowerBI와의 데이터 일치여부 확인 및 수정</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>신규 PowerBI Report 제작 및 성능개선을 위한 테이블 구조 변경 및 DAX식 수정</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>SSIS를 활용한 원천 Data Source DW DM ETL Pipeline 작성 및 모니터링</span></li>
+            </ul>
+            <p>
+              삼성전자 MX 사업부 CRM 분석을 위한 PowerBI Report 시스템 유지보수를 위해 투입되어 기존의 Report 관리 및 고객사 요청사항에 따라 발생하는 PowerBI Report 작성 및 DataMart 관리를 진행했습니다.<br>
+              이어서 진행된 고도화 프로젝트에서는 원천 소스, DW, DM으로 이어지는 전체적인 ETL 프로세스를 SSIS를 활용하여 파이프라인을 구축하는 것을 주 업무로 진행하였고, 기존에 유지보수를 진행하며 파악했던 Report들의 특성을 활용하여 Handraiser관련 Report의 성능개선을 추가적으로 진행하였습니다.<br>
+              Handraiser관련 Report의 경우 Data의 양이 증가함에 따라 속도를 개선할 필요가 있었는데, 용량이 큰 Fact Table을 Dimension Table들과 연계하여 용량이 작은 여러개의 Fact Table로 분할하고 비효율적인 Relation과 DAX식을 최적화하여 Report 조회속도를 3배 이상 개선하였습니다.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body class="service-details-page">
+
+  <!-- Header -->
+  {% include "header.html" %}
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'main:index' %}">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <img src="{% static 'img/img_source/Golfzon.png' %}" class="img-fluid">
+            </div>
+
+            <h4>골프존</h4>
+            <p>골프존은 대한민국을 대표하는 골프 관련 기업으로, 2000년에 설립되어 골프 시뮬레이터 시장에서 독보적인 위치를 차지하고 있습니다.<br> 
+               주요 제품인 GDR(골프 연습용 시뮬레이터)과 비전(실내 골프 시뮬레이터)을 통해 실내에서 실제 필드와 같은 경험을 제공합니다. 골프존은 AI, 데이터 분석, AR/VR 등의 혁신 기술을 활용하여 골프 실력 분석 및 맞춤형 서비스를 제공하며, 글로벌 시장으로 확장하여 북미, 유럽, 아시아 등지에서 골프 문화를 보급하고 있습니다.</p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <h3>Golfzon BI 구축 및 유지보수 프로젝트</h3>
+            <h4>프로젝트 기간: 2023.07 - 2024.07</h4>
+            <p>
+              <br>Azure Service(Azure DataFactory, Storage), Databricks 서비스를 활용한 DataLake, DataMart 구축 및 BI 시스템을 구축 및 유지보수하는 프로젝트였습니다.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Azure Data Factory를 활용한 원천 Data Source, Data Lake(Gen2), Databricks ETL Pipeline 작성 및 모니터링</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Databricks 테이블 생성 및 유지 관리</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>ADF, SFTP를 활용한 반정형 날씨 데이터 이관 후 Databricks 및 Python(pandas, pyspark)를 활용해 테이블 생성, 적재</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>API 및 Databricks Log Table 활용, 시각화 시스템 사용현황 및 파이프라인 실행현황 관련 데이터 ETL, PowerBI Report 생성</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>시각화 시스템 ETL 현황 및 사용현황 모니터링 및 유지보수 & Log client 관련 ETL 내용 follow-up 및 지원</span></li>
+            </ul>
+            <p>
+              골프존의 한국, 글로벌 데이터를 Azure Data Factory를 활용하여 Azure Data Lake(Gen2)에 적재하고 이를 Databricks와 연결하여 처리 후 BI Report로 보여주는 시스템을 구축하는 프로젝트에 투입되어 Databricks 환경을 구축 및 관리하는 업무와 전반적인 ETL Pipeline을 구축하는 업무를 주업무로 진행했습니다.<br>
+              효율적인 파이프라인 구축을 위해 python, Azure CLI, Powershell과 Excel을 연계하여 자동으로 파이프라인을 생성할 수 있게 업무를 처리하였으며, 이를 통해 작업에 필요한 자원들과 시간을 줄일 수 있었습니다.<br>
+              추가적으로 파이프라인 실행기록과 사용자들의 활동을 추적할 수 있는 로그성 데이터를 Databricks에서 적재할 수 있게 하고, 적재된 데이터를 가공하여 PowerBI Report로 작성하였으며, 반정형 날씨 데이터를 SFTP로 전달받아 Gen2에 적재 후 Databricks 테이블로 적재하는 프로세스를 개발하였습니다.<br>
+              개발 프로젝트가 마무리 된 후에는 해당 시스템을 지속적으로 모니터링 및 유지보수하였으며, Log client 관련 ETL을 follow-up 및 지원하는 업무를 진행했습니다.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+{% endblock %}

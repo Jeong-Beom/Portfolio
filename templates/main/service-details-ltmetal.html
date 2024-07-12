@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body class="service-details-page">
+
+  <!-- Header -->
+  {% include "header.html" %}
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'main:index' %}">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <img src="{% static 'img/img_source/LT_Metal.png' %}" class="img-fluid">
+            </div>
+
+            <h4>LT 메탈</h4>
+            <p>LT 메탈은 1974년 세계유수의 귀금속 회사인 일본 다나까 귀금속 공업(주)와 합작하여 설립된 이후, 각종 귀금속 소재 및 부품의 국산화 추진과 개발로 비약적인 성장을 통해 소재 산업의 기초 및 첨단 부품을 개발, 생산, 판매하고 있습니다.<br>
+               최신의 반도체 관련 소재와 정보통신, 환경, 연료전지, LED, 의료분야의 새로운 사업영역의 개척과 확대를 도모하고 있으며, 끊임없는 연구개발과 경영혁신 활동 등을 통한 최고의 품질가치 창출로 고객의 기대와 요구사항을 충족시켜 고객만족을 실현해 가고자 하는 기업입니다.
+            </p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <h3>LT메탈 Power BI 보고서 구축 프로젝트</h3>
+            <h4>프로젝트 기간: 2022.02 - 2022.04</h4>
+            <p>
+              <br>Azure Data Factory를 활용한 데이터 ELT Process 관리 및 확인하고 Azure Analysis Services와 Visual Studio, Power BI를 활용하여 시각화 보고서 시스템을 구축했던 프로젝트입니다.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Azure Analysis Services, Visual Studio를 활용한 Data Mart 테이블 생성, 수정, 삭제, 가공</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Data Mart 테이블과 PowerBI 인터페이스 후 고객 요청사항에 맞는 시각화 Report 작성</span></li>
+            </ul>
+            <p>
+              입사 후 처음으로 투입된 프로젝트로 고객 및 데이터 엔지니어와의 의사소통을 통해 작성이 필요한 PowerBI Report에 대한 정보를 확인하고, 그에 필요한 DataMart 테이블들과 PowerBI Report를 설계 및 작성하였습니다.<br>
+              환율정보 데이터를 활용하여 원자재 및 통화들의 가치변동을 보여주는 페이지와 원자재 가격과 통화 환율정보 그리고 일일단위로 발생하는 비용과 같은 부분들을 연계하여 특정 통화들을 기준으로 일일단위로 재무적인 현황을 한눈에 파악할 수 있는 Report등을 작성하였습니다.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+{% endblock %}

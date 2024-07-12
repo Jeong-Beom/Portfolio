@@ -357,13 +357,25 @@
               </div>
             </div><!-- End Portfolio Item -->
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pp">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'img/img_source/Loading.png' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Personal Project 2</h4>
+                  <p>Django로 만든 나만의 Portfolio 사이트입니다.</p>
+                  <a href="{% static 'img/img_source/Loading.png' %}" title="Django로 만든 나만의 Portfolio 사이트입니다." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gp">
               <div class="portfolio-content h-100">
-                <img src="{% static 'img/portfolio/product-1.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'img/img_source/Loading.png' %}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Group Project 1</h4>
                   <p>준비중입니다.</p>
-                  <a href="{% static 'img/portfolio/product-1.jpg' %}" title="준비중입니다." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{% static 'img/img_source/Loading.png' %}" title="준비중입니다." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -371,11 +383,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pp">
               <div class="portfolio-content h-100">
-                <img src="{% static 'img/portfolio/app-2.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'img/img_source/Loading.png' %}" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Personal Project 2</h4>
+                  <h4>Personal Project 3</h4>
                   <p>준비중입니다.</p>
-                  <a href="{% static 'img/portfolio/app-2.jpg' %}" title="준비중입니다." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{% static 'img/img_source/Loading.png' %}" title="준비중입니다." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -395,7 +407,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>그 동안 수행했던 프로젝트들에 대한 세부사항 및 수행한 세부업무에 대한 소개입니다.</p>
+        <p>그 동안 진행했던 개발 및 유지보수 프로젝트들(진행기간이 3개월 이상인 프로젝트들)에 대한 세부사항 및 수행한 세부업무에 대한 소개입니다.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -405,8 +417,8 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
             <div>
-              <h4 class="title"><a href="{% url 'main:service_details_sample' %}" class="stretched-link">Sample</a></h4>
-              <p class="description">세부내용 작성 목적 샘플 페이지입니다.</p>
+              <h4 class="title"><a href="{% url 'main:service_details_ltmetal' %}" class="stretched-link">LT메탈</a></h4>
+              <p class="description">LT메탈에서 진행했던 BI 구축 프로젝트입니다.</p>
             </div>
           </div>
           <!-- End Service Item -->
@@ -414,23 +426,23 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
             <div>
-              <h4 class="title"><a class="stretched-link"></a>LT메탈</h4>
-              <p class="description">향후 추가예정입니다.</p>
+              <h4 class="title"><a href="{% url 'main:service_details_samsungelectronics' %}" class="stretched-link"></a>삼성전자</h4>
+              <p class="description">삼성전자에서 진행했던 MX, VD, DA 사업부 대상 BI 운영 및 고도화 프로젝트입니다.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
             <div>
-              <h4 class="title"><a class="stretched-link">OB맥주</a></h4>
-              <p class="description">향후 추가예정입니다.</p>
+              <h4 class="title"><a href="{% url 'main:service_details_golfzon' %}" class="stretched-link"></a>골프존</h4>
+              <p class="description">골프존에서 진행했던 BI 시스템 구축 프로젝트입니다.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
             <div>
-              <h4 class="title"><a class="stretched-link">삼성전자</a></h4>
+              <h4 class="title"><a class="stretched-link">향후 추가예정</a></h4>
               <p class="description">향후 추가예정입니다.</p>
             </div>
           </div><!-- End Service Item -->
@@ -438,7 +450,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
             <div>
-              <h4 class="title"><a class="stretched-link">골프존</a></h4>
+              <h4 class="title"><a class="stretched-link">향후 추가예정</a></h4>
               <p class="description">향후 추가예정입니다.</p>
             </div>
           </div><!-- End Service Item -->
