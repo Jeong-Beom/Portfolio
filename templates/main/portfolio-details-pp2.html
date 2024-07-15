@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  {% include "header.html" %}
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Personal Project 1</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'main:index' %}">Home</a></li>
+            <li class="current">Personal Project 1</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/img_source/Portfolio_project_01.png' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/img_source/Portfolio_project_02.png' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/img_source/Portfolio_project_03.png' %}" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web site</li>
+                <li><strong>Project date</strong>: 15 July, 2024</li>
+                <li><strong>Project URL</strong>: <a href="https://introducemyself.me" target="_blank">introducemyself.me</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>나만의 Portfolio 만들기</h2>
+              <p>
+                Django, Bootstrap, nginx, gunicorn를 사용해 만든 Portfolio 사이트입니다.<br>
+                Bootstrap template을 기반으로 그 동안의 경력과 능력을 확인할 수 있는 사이트를 작성하였습니다.<br>
+                OS는 Ubuntu를 사용하였으며, IDE는 VS Code를 활용하였고, ssh로 연결하여 작업 후 Git, Github를 통해 버전관리를 진행하며 개발서버와 운영서버의 동기화를 진행하였습니다.<br>
+                웹서버는 nginx를, WSGI는 gunicorn을 사용하여 서비스를 구성하였고, 구입한 도메인과 let's encrypt SSL서비스를 연계하여 도메인 주소로 접근할 수 있게 배포하였습니다. 
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+{% endblock %}

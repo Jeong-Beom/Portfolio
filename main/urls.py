@@ -10,6 +10,7 @@ urlpatterns = [
 
     # portfolio_details.views.py
     path('portfolio_details/pp1', portfolio_details_views.portfolio_details_pp1, name='portfolio_details_pp1'),
+    path('portfolio_details/pp2', portfolio_details_views.portfolio_details_pp2, name='portfolio_details_pp2'),
     
     # service_details_views_py
     path('service_details/ltmetal', service_details_views.service_details_ltmetal, name='service_details_ltmetal'),
